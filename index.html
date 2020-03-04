@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GESTION DE BANQUE</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    </head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+                <ion-title>GESTION DE BANQUE  </ion-title>
+            </ion-toolbar>
+
+        </ion-header>
+        <ion-content  >
+            <ion-grid > 
+                <ion-row color="tertiary" >
+                    <ion-col  size-md="6"offset-md="3" > 
+                        <ion-card  >
+                            
+                            
+                            <ion-card-header >
+                                <ion-card-title  >ZONE D'INSCRIPTION  </ion-card-title>
+                               
+                            </ion-card-header>
+                                <ion-item >
+                                    <ion-label position="floating">VOTRE PRENOM</ion-label>
+                                    <ion-input  type="text" id="input-prenom"></ion-input>
+                                </ion-item>
+                                <ion-item >
+                                    <ion-label position="floating">VOTRE NOM</ion-label>
+                                    <ion-input  type="text" id="input-nom"></ion-input>
+                                </ion-item>
+                                <ion-item >
+                                    <ion-label position="floating">VOTRE ADRESSE</ion-label>
+                                    <ion-input  type="text" id="input-adresse"></ion-input>
+                                </ion-item>
+                                <ion-item >
+                                    <ion-label position="floating">VOTRE NUMERO DE TELEPHONE</ion-label>
+                                    <ion-input  type="number" id="input-tel"></ion-input>
+                                </ion-item>
+                                <ion-item >
+                                    <ion-label position="floating">VOTRE MAIL</ion-label>
+                                    <ion-input  type="text" id="input-mail"></ion-input>
+                                </ion-item>
+                                <ion-item >
+                                    <ion-label position="floating">VOTRE MOT DE PASSE</ion-label>
+                                    <ion-input  type="text" id="input-mp" ></ion-input>
+                                </ion-item>
+                                <div margin-vertical text-center>
+                            <ion-button id="btnEnregistre">
+                            <ion-icon slot="start" name="add"></ion-icon> 
+                             ENREGISTRER
+                            </ion-button>
+                            <ion-button fill="outline" color="danger" id="btnAnnuler">
+                            <ion-icon slot="start" name="close"></ion-icon>
+                                ANNULER
+                             </ion-button>
+                            
+                            </div>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            <ion-row>
+                <ion-col>
+                    <ion-list id="inscription-list"></ion-list>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col>
+                    <p> TOTAL INSCRIPTION <span id="total-inscri"></span></p>
+                </ion-col>
+            </ion-row>
+            
+
+            </ion-grid>
+            
+           
+       
+          
+        </ion-content>
+    </ion-app>
+<script src="javaindex.js"></script>
+</body>
+</html>

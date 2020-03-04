@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONNEXION</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="success">
+                <ion-title>CONNEXION  </ion-title>
+            </ion-toolbar>
+
+        </ion-header>
+        <ion-content >
+            <ion-grid > 
+                <ion-row color="# 1e2023" >
+                    <ion-col  size-md="6"offset-md="3" > 
+            <ion-card  >
+                <ion-card-header >
+                    <ion-card-title >ZONE DE CONNEXION </ion-card-title>
+                </ion-card-header>
+                <ion-item >
+                    <ion-label position="floating">VOTRE ADRESSE MAIL</ion-label>
+                    <ion-input  type="mail" ></ion-input>
+                </ion-item>
+                <ion-item >
+                    <ion-label position="floating">MOT DE PASSE</ion-label>
+                    <ion-input  type="password" ></ion-input>
+                    <div margin-vertical text-right>
+                        <ion-button id="btnEnregistre">
+                        <ion-icon slot="start" name="globe-outline"></ion-icon> 
+                         ENREGISTRER
+                        </ion-button>
+                        <ion-button fill="outline" color="danger" id="btnAnnuler">
+                        <ion-icon slot="start" name="close"></ion-icon>
+                            ANNULER
+                         </ion-button>
+                        
+                        </div>
+                </ion-item>
+            </ion-card  >
+                </ion-col  >
+                </ion-row>
+                
+            </ion-grid > 
+            </ion-content>
+      </ion-app>
+      <script src="javaindex.js"></script>
+</body>
+</html>
